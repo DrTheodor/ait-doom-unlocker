@@ -1,29 +1,29 @@
 {
   "schemaVersion": 1,
-  "id": "ait-example-addon",
+  "id": "ait-unlocker",
   "version": "${version}",
-  "name": "Example AIT Addon",
-  "description": "",
+  "name": "[AIT] Unlocker",
+  "description": "Unlocks hidden AIT features.",
   "authors": [],
   "contact": {
-    "repo": "https://github.com/pavatus/ait-example-addon"
+    "repo": "https://github.com/DrTheodor/ait-doom-unlocker"
   },
   "license": "MIT",
-  "icon": "assets/ait-example-addon/icon.png",
+  "icon": "assets/ait-unlocker/icon.png",
   "environment": "*",
   "entrypoints": {
     "client": [
-      "com.aitexampleaddon.client.ExampleAddonModClient"
+      "dev.drtheo.aitunlocker.client.UnlockerClientMod"
     ],
     "main": [
-      "com.aitexampleaddon.ExampleAddonMod"
+      "dev.drtheo.aitunlocker.UnlockerMod"
     ],
     "ait-main": [
-      "com.aitexampleaddon.ait.ExampleAITAddon"
+      "dev.drtheo.aitunlocker.ait.UnlockerAITAddon"
     ]
   },
   "mixins": [
-    "ait-example-addon.mixins.json"
+    "ait-unlocker.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=${loader_version}",

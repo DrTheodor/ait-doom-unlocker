@@ -1,11 +1,12 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "com.aitexampleaddon.mixin",
+  "package": "dev.drtheo.aitunlocker.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
   ],
   "client": [
+    "MonitorScreenMixin"
   ],
   "injectors": {
     "defaultRequire": 1
